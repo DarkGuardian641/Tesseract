@@ -1,0 +1,44 @@
+body {
+    background-color: #13171A;
+    color: white;
+}
+
+.bg-dark {
+    background-color: #13171A;
+}
+
+.nav-button {
+    margin-right: 1.25rem;
+    background-color: #21262D;
+    border: none;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.375rem;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #6067F1;
+}
+
+.register-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #21262D;
+    border: none;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.375rem;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 0;
+    margin-left: 1rem;
+}
+
+.register-button:hover {
+    background-color: #6067F1;
+}
+

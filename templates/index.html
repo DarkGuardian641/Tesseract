@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techfest</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-dark text-white">
+
+    <!-- ✅ Navbar -->
+    <header class="flex z-40 w-full h-auto items-center justify-between sticky top-0 inset-x-0 backdrop-blur-lg bg-background/70 px-4 py-3 sm:px-6">
+        <!-- Logo -->
+        <a href="/" class="flex items-center">
+            <img src="static/assets/Tesseract_logo.png" alt="Tesseract 2K25 Logo" class="h-10 sm:h-12">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden sm:flex gap-6 items-center">
+            <a href="/" class="font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent transition-all duration-300 hover:from-purple-400 hover:to-blue-400">Home</a>
+            <a href="/events" class="hover:text-gray-300 transition">Events</a>
+            <a href="/schedule" class="hover:text-gray-300 transition">Schedule</a>
+            <a href="/contact" class="hover:text-gray-300 transition">Contact</a>
+        </nav>
+
+        <!-- Register Button -->
+        <a href="/register" class="sm:ml-0">
+            <button class="px-4 py-2 text-sm font-medium text-white bg-gradient-to-br from-purple-600 to-blue-500 rounded-md hover:bg-gradient-to-bl">Register</button>
+        </a>
+    </header>
+
+    <!-- ✅ Mobile Bottom Navigation -->
+    <nav class="sm:hidden fixed bottom-0 inset-x-0 bg-black/90 text-white py-3 px-6 flex justify-around items-center shadow-lg border-t border-gray-500/50">
+        <a href="/" class="flex flex-col items-center text-xs">
+            <span>🏠 Home</span>
+        </a>
+        <a href="/events" class="flex flex-col items-center text-xs">
+            <span>📅 Events</span>
+        </a>
+        <a href="/schedule" class="flex flex-col items-center text-xs">
+            <span>🕒 Schedule</span>
+        </a>
+        <a href="/contact" class="flex flex-col items-center text-xs">
+            <span>📞 Contact</span>
+        </a>
+    </nav>
+
+    <!-- ✅ Hero Section -->
+    <section class="text-white body-font bg-[#13171a]">
+        <div class="container mx-auto px-5 py-24 flex flex-col items-center text-center sm:flex-row sm:text-left sm:justify-between">
+            <!-- Left: Hero Text -->
+            <div class="sm:w-1/2 lg:w-5/12">
+                <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight">
+                    Welcome to <br>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">TESSERACT</span> 
+                    <span class="text-white">2025</span>
+                </h1>
+                <p class="text-lg text-gray-300 mt-4 max-w-sm sm:max-w-xl">
+                    Join us for a week of innovation, learning, and fun! Participate in various tech events, workshops, and competitions.
+                </p>
+            </div>
+            <!-- Right: Hero Image -->
+            <div class="sm:w-1/2 lg:w-5/12 mt-6 sm:mt-0 flex justify-center">
+                <img class="w-full max-w-xs sm:max-w-lg rounded-lg" alt="hero" src="static/assets/Tesseract_Banner.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Event Schedule -->
+    <section class="text-gray-100 body-font">
+        <div class="container mx-auto text-center py-16 px-5">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Event Schedule</h2>
+            <p class="text-gray-400 text-base sm:text-lg mb-8">Check out the schedule for the week-long event. Plan your participation accordingly.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                <div class="border border-blue-400 rounded-lg p-4 sm:p-6">
+                    <h3 class="text-lg font-semibold text-blue-400">Day 1 - Events</h3>
+                    <p class="text-gray-400 mt-2">27 February 2025</p>
+                </div>
+                <div class="border border-blue-400 rounded-lg p-4 sm:p-6">
+                    <h3 class="text-lg font-semibold text-blue-400">Day 2 - Events</h3>
+                    <p class="text-gray-400 mt-2">2 February 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Venue Section -->
+    <div class="text-center">
+      <span class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full">Venue</span>
+      <h2 class="text-3xl font-bold mt-3">Where?</h2>
+      <p class="mt-2 text-lg">Keystone School of Engineering, Near Handewadi Chowk, Urali Devachi, Pune 412308</p>
+      <br>
+      <button id="openModalBtn" class="mt-4 px-6 py-2 text-white font-semibold rounded-lg shadow-md bg-gradient-to-r from-blue-500 to-purple-600">
+          Get Direction
+      </button>
+    
+  </div>
+
+  <!-- Modal Background -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden">
+      <div class="bg-gray-900 text-white p-6 rounded-lg max-w-lg w-full relative">
+          <h3 class="text-xl font-semibold text-center">Keystone School of Engineering</h3>
+          <div class="mt-4">
+              <!-- Google Map Embed -->
+              <iframe 
+                  class="w-full h-64 rounded-lg" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.8092209165507!2d73.93491957593083!3d18.44696928263237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e999215c9f2b%3A0xa9b93c99a6184c98!2sKeystone%20School%20of%20Engineering!5e0!3m2!1sen!2sin!4v1739695990761!5m2!1sen!2sin" 
+                  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </div>
+          <button id="closeModalBtn" class="mt-4 w-full bg-red-600 py-2 rounded-lg">Cancel</button>
+      </div>
+  </div>
+
+  <script src="static/js/script.js"></script> <!-- Linking JavaScript file -->
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+    <!-- ✅ Footer -->
+    <footer class="bg-black text-white py-6">
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between px-6 text-sm text-gray-400">
+            <p class="text-center sm:text-left">© 2025 TESSERACT | Keystone School of Engineering TechFest. All rights reserved.</p>
+            <p class="text-center sm:text-right">
+                Design & Developed By 
+                <a href="https://www.linkedin.com/in/atharva-baikar/" class="text-blue-500 font-semibold hover:underline">Atharva Baikar</a> 
+                and 
+                <a href="https://www.linkedin.com/in/akanksha-kanade-34b999284/" class="text-blue-500 font-semibold hover:underline">Akanksha Kanade</a>
+            </p>
+        </div>
+    </footer>
+
+    {% block content %}{% endblock %}
+</body>
+</html>
