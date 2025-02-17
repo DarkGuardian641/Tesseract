@@ -1,101 +1,89 @@
-// Event listener for any "Details" button
-document.querySelectorAll('.details-btn').forEach(button => {
-    button.addEventListener('click', function () {
-        const eventId = this.getAttribute('data-event');
-        openPopup(eventId);
+// Wait until the DOM content is loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all the "Details" buttons
+    const detailsButtons = document.querySelectorAll('.details-btn');
+    
+    // Get the popup elements
+    const popup = document.getElementById('popup');
+    const closeBtn = document.getElementById('close-btn');
+    const popupImg = document.getElementById('popup-img');
+    const popupDetails = document.getElementById('popup-details');
+    const popupRounds = document.getElementById('popup-rounds');
+    const popupTeamMembers = document.getElementById('popup-team-members');
+    const popupPrice = document.getElementById('popup-price');
+    const popupCoordinator = document.getElementById('popup-coordinator');
+    const popupName = document.getElementById('event-name');
+    
+    // Event listener for each Details button
+    detailsButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const eventId = this.getAttribute('data-event');
+            
+            // Fetch event data based on the eventId (this can be fetched from an API or hardcoded)
+            // Below is an example of hardcoded data:
+            const eventDetails = getEventDetails(eventId);
+            
+            // Update the popup content with the event details
+            popupName.textContent = eventDetails.name;
+            popupImg.src = eventDetails.image;
+            popupDetails.textContent = eventDetails.description;
+            popupRounds.textContent = `Rounds: ${eventDetails.rounds}`;
+            popupTeamMembers.textContent = `Team Members: ${eventDetails.teamMembers}`;
+            popupPrice.textContent = `Price: $${eventDetails.price}`;
+            popupCoordinator.textContent = `Coordinator: ${eventDetails.coordinator}`;
+            
+            // Show the popup
+            popup.classList.remove('hidden');
+        });
+    });
+    
+    // Close the popup when the close button is clicked
+    closeBtn.addEventListener('click', function() {
+        popup.classList.add('hidden');
     });
 });
 
-// Open popup with the event details
-function openPopup(eventId) {
-    // Show the popup
-    document.getElementById('popup').classList.remove('hidden');
-
-    // Customize the content based on the eventId
-    let eventDetails, eventImage, eventTitle;
-
-    if (eventId === '1') {
-        eventDetails = 'Participants will compete with their IoT-based line-tracing car & the one to reach the end...';
-        eventImage = 'https://via.placeholder.com/600x300'; // Add a relevant image URL
-        eventTitle = 'Tech Savvy Quiz';
-    } else if (eventId === '2') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Valorant Clash';
-    } else if (eventId === '3') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Escape Room';
-    } else if (eventId === '4') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Reel It';
-    } else if (eventId === '5') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Code Sprint';
-    } else if (eventId === '6') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Idea Fusion';
-    } else if (eventId === '7') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'QR Quest';
-    } else if (eventId === '8') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'AI Prompt Battle';
-    } else if (eventId === '9') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'BGMI';
-    } else if (eventId === '10') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Clash of Minds';
-    } else if (eventId === '11') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Trace X';
-    } else if (eventId === '12') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Craft n Create';
-    } else if (eventId === '13') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Cad Genesis';
-    } else if (eventId === '14') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Robo Race';
-    } else if (eventId === '15') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Obstacle Blitz';
-    } else if (eventId === '16') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Tech Arena';
-    } else if (eventId === '17') {
-        eventDetails = 'This is the second event. Compete in tech challenges with your IoT device!';
-        eventImage = 'https://via.placeholder.com/600x300'; // Another image URL
-        eventTitle = 'Startup Mania';
-    } else {
-        eventDetails = 'No details available for this event';
-        eventImage = 'https://via.placeholder.com/600x300';
-        eventTitle = 'Event Details';
-    }
-
-    // Set dynamic content for the popup
-    document.getElementById('popup-title').textContent = eventTitle;
-    document.getElementById('popup-img').src = eventImage;
-    document.getElementById('popup-details').textContent = eventDetails;
+// Example function to get event details by eventId
+function getEventDetails(eventId) {
+    // This would normally fetch data from a server, but here's a basic example:
+    const eventData = {
+        1: {
+            name: "Tech Savvy Quiz",
+            description: "Participants will compete with their IoT-based line-tracing car & the one to reach the end.",
+            image: "static/assets/bgmi_banner.png",
+            rounds: 3,
+            teamMembers: 4,
+            price: 50,
+            coordinator: "John Doe"
+        },
+        2: {
+            name: "Valorant Clash",
+            description: "Participants will compete in a solo Valorant tournament.",
+            image: "https://via.placeholder.com/600x300",
+            rounds: 5,
+            teamMembers: 1,
+            price: 100,
+            coordinator: "Jane Smith"
+        },
+        3: {
+            name: "IoT Showdown",
+            description: "Tech teams will battle it out with their innovative IoT projects.",
+            image: "https://via.placeholder.com/600x300",
+            rounds: 4,
+            teamMembers: 3,
+            price: 150,
+            coordinator: "Alice Johnson"
+        },
+        // Add more events as needed...
+    };
+    
+    return eventData[eventId] || {
+        name: "Unknown Event",
+        description: "No details available.",
+        image: "https://via.placeholder.com/600x300",
+        rounds: 0,
+        teamMembers: 0,
+        price: 0,
+        coordinator: "Unknown"
+    };
 }
-
-// Event listener for the "Close" button in the popup
-document.getElementById('close-btn').addEventListener('click', function () {
-    // Hide the popup
-    document.getElementById('popup').classList.add('hidden');
-});

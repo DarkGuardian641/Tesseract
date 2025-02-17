@@ -281,17 +281,35 @@
             </button>
         </div>
 
-            <!-- Popup -->
-            <div id="popup" class="popup-overlay hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-                <div class="popup-content bg-gray-800 text-white p-6 rounded-lg w-1/2">
-                    <h3 class="text-lg font-bold">Event Details</h3>
-                        <img id="popup-img" src="https://via.placeholder.com/600x300" alt="Event Image" class="w-full h-auto mt-4 mb-4 rounded">
-                        <p id="popup-details" class="text-gray-300">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-                        <button id="close-btn" class="mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:scale-105 transition">Close</button>
-                </div>
+        <!-- Popup -->
+        <div id="popup" class="popup-overlay hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+            <div class="popup-content bg-gray-800 text-white p-6 rounded-lg w-1/2">
+                <!-- Event Name -->
+                <h3 id="event-name" class="text-xl font-bold mb-2">Event Name</h3>
+        
+                <!-- Event Details -->
+                <p id="popup-details" class="text-gray-300 mb-4">Detailed Description</p>
+        
+                <!-- Rounds -->
+                <p id="popup-rounds" class="text-gray-300 mb-4">Rounds: <span class="font-semibold">3</span></p>
+        
+                <!-- Team Members -->
+                <p id="popup-team-members" class="text-gray-300 mb-4">Team Members: <span class="font-semibold">5</span></p>
+        
+                <!-- Price -->
+                <p id="popup-price" class="text-gray-300 mb-4">Price: <span class="font-semibold">$100</span></p>
+        
+                <!-- Coordinator -->
+                <p id="popup-coordinator" class="text-gray-300 mb-4">Coordinator: <span class="font-semibold">John Doe</span></p>
+        
+                <!-- Event Image -->
+                <img id="popup-img" src="https://via.placeholder.com/600x300" alt="Event Image" class="w-full h-auto mt-4 mb-4 rounded">
+        
+                <!-- Close Button -->
+                <button id="close-btn" class="mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:scale-105 transition">Close</button>
             </div>
-        </div>        
-    </section>
+        </div>
+
 
     <!-- ✅ Footer -->
     <footer class="bg-black text-white py-6">
@@ -307,7 +325,5 @@
     </footer>
     {% block content %}{% endblock %}
     <script src="static/js/events.js"></script>
-
-    
 </body>
 </html>
