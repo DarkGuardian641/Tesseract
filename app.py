@@ -26,6 +26,12 @@ def contact():
 @app.route('/register')
 def register():
     return render_template('register.html')
+@app.route('/techsavy')
+def techsavy():
+    return render_template('techsavy.html')
+@app.route('/valorant')
+def valorant():
+    return render_template('valorant.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Savvy Event</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-dark text-white">
+    <!-- ✅ Navbar -->
+    <header class="flex z-40 w-full h-auto items-center justify-between sticky top-0 inset-x-0 backdrop-blur-lg bg-background/70 px-4 py-3 sm:px-6">
+        <!-- Logo -->
+        <a href="/" class="flex items-center">
+            <img src="static/assets/Tesseract_logo.png" alt="Tesseract 2K25 Logo" class="h-10 sm:h-12">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden sm:flex gap-6 items-center">
+            <a href="/" class="font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent transition-all duration-300 hover:from-purple-400 hover:to-blue-400">Home</a>
+            <a href="/events" class="hover:text-gray-300 transition">Events</a>
+            <a href="/schedule" class="hover:text-gray-300 transition">Schedule</a>
+            <a href="/contact" class="hover:text-gray-300 transition">Contact</a>
+        </nav>
+
+        <!-- Register Button -->
+        <a href="/register" class="sm:ml-0">
+            <button class="px-4 py-2 text-sm font-medium text-white bg-gradient-to-br from-purple-600 to-blue-500 rounded-md hover:bg-gradient-to-bl">Register</button>
+        </a>
+    </header>
+
+    <!-- ✅ Mobile Bottom Navigation -->
+    <nav class="sm:hidden fixed bottom-0 inset-x-0 bg-black/90 text-white py-3 px-6 flex justify-around items-center shadow-lg border-t border-gray-500/50">
+        <a href="/" class="flex flex-col items-center text-xs">
+            <span>🏠 Home</span>
+        </a>
+        <a href="/events" class="flex flex-col items-center text-xs">
+            <span>📅 Events</span>
+        </a>
+        <a href="/schedule" class="flex flex-col items-center text-xs">
+            <span>🕒 Schedule</span>
+        </a>
+        <a href="/contact" class="flex flex-col items-center text-xs">
+            <span>📞 Contact</span>
+        </a>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Column - Event Details -->
+            <div class="space-y-6">
+                <h1 class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    Tech Savvy Quiz
+                </h1>
+                
+                <div class="space-y-4">
+                    <!-- Basic Event Info -->
+                    <div>
+                        <h2 class="text-xl font-semibold text-purple-400">Description</h2>
+                        <p class="text-gray-300">
+                            Participants will compete with their IoT-based line-tracing car & the one to reach the end.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-semibold text-purple-400">Team Composition</h2>
+                        <p class="text-gray-300">4 participants per team</p>
+                    </div>
+
+                    <!-- Rounds Details -->
+                    <div>
+                        <h2 class="text-xl font-semibold text-purple-400">Rounds</h2>
+                        <div class="text-gray-300 space-y-2">
+                            <p><span class="font-medium">Round 1 (General):</span> No buzzer, 3 questions per team, 10 marks each</p>
+                            <p><span class="font-medium">Round 2 (Rapid Fire):</span> 1 min per team, max 10 questions, 5 marks per correct answer</p>
+                            <p><span class="font-medium">Round 3 (Logical Thinking):</span> Buzzer round, 10 MCQs, 15 marks for correct, -10 for wrong/no answers</p>
+                        </div>
+                    </div>
+
+                    <!-- Rules and Regulations -->
+                    <div>
+                        <h2 class="text-xl font-semibold text-purple-400">Rules & Regulations</h2>
+                        <ul class="text-gray-300 list-disc list-inside space-y-1">
+                            <li>Strict time adherence for each round</li>
+                            <li>Teams must report 15 minutes before the quiz starts</li>
+                            <li>No mobile phones or reference materials allowed</li>
+                            <li>Participants must maintain decorum and respect</li>
+                            <li>Judges' decision is final and binding</li>
+                            <li>Rule violations may lead to immediate disqualification</li>
+                            <li>Discussions should be quick and quiet</li>
+                        </ul>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div>
+                        <h2 class="text-xl font-semibold text-purple-400">Additional Information</h2>
+                        <div class="text-gray-300 space-y-2">
+                            <p><span class="font-medium">Tie-Breaker:</span> Special round in case of tie</p>
+                            <p><span class="font-medium">Support:</span> Visit official website for more details</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Heads -->
+                    <div>
+                        <h2 class="text-xl font-semibold text-purple-400">Event Heads</h2>
+                        <div class="text-gray-300 space-y-1">
+                            <p>Akash Tribhuvan: 8329284592</p>
+                            <p>Rushikesh Satav: 9096895792</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Event Image -->
+            <div class="flex items-center justify-center">
+                <img src="static/assets/bgmi_banner.png" 
+                     alt="Tech Savvy Event" 
+                     class="rounded-lg shadow-lg w-full max-w-md">
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ Footer -->
+    <footer class="bg-black text-white py-6">
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between px-6 text-sm text-gray-400">
+            <p class="text-center sm:text-left">© 2025 TESSERACT | Keystone School of Engineering TechFest. All rights reserved.</p>
+            <p class="text-center sm:text-right">
+                Design & Developed By 
+                <a href="https://www.linkedin.com/in/atharva-baikar/" class="text-blue-500 font-semibold hover:underline">Atharva Baikar</a> 
+                and 
+                <a href="https://www.linkedin.com/in/akanksha-kanade-34b999284/" class="text-blue-500 font-semibold hover:underline">Akanksha Kanade</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
