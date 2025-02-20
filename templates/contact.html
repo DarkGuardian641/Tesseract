@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-dark text-white">
+    <!-- Navbar -->
+    <header class="flex z-40 w-full h-auto items-center justify-between sticky top-0 inset-x-0 backdrop-blur-lg bg-background/70 px-4 py-3 sm:px-6">
+        <!-- Logo -->
+        <a href="/" class="flex items-center">
+            <img src="static/assets/Tesseract_logo.png" alt="Tesseract 2K25 Logo" class="h-10 sm:h-12">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden sm:flex gap-6 items-center">
+            <a href="/" class="font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent transition-all duration-300 hover:from-purple-400 hover:to-blue-400">Home</a>
+            <a href="/events" class="hover:text-gray-300 transition">Events</a>
+            <a href="/#scheduleeve" class="hover:text-gray-300 transition">Schedule</a>
+            <a href="/contact" class="hover:text-gray-300 transition">Contact</a>
+        </nav>
+
+        <!-- Register Button -->
+        <a href="/register" class="sm:ml-0">
+            <button class="px-4 py-2 text-sm font-medium text-white bg-gradient-to-br from-purple-600 to-blue-500 rounded-md hover:bg-gradient-to-bl">Register</button>
+        </a>
+    </header>
+
+    <!-- Main Content -->
+    <div class="min-h-screen flex items-center justify-center px-4">
+        <div class="max-w-4xl w-full bg-gray-900/50 backdrop-blur-lg rounded-xl border border-gray-700 p-8 sm:p-12">
+            <h1 class="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                Contact Us
+            </h1>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Contact Card 1 -->
+                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-all">
+                    <h3 class="text-xl font-semibold text-blue-400">Atharva Baikar</h3>
+                    <!-- <p class="text-gray-300 mt-2">Technical Head</p> -->
+                    <a href="tel:+918605232048" class="mt-4 inline-block text-white hover:text-blue-400 transition">
+                        +91 8605232048
+                    </a>
+                </div>
+
+                <!-- Contact Card 2 -->
+                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-purple-400 transition-all">
+                    <h3 class="text-xl font-semibold text-purple-400">Akanksha Kanade</h3>
+                    <!-- <p class="text-gray-300 mt-2">Event Coordinator</p> -->
+                    <a href="tel:+919175947532" class="mt-4 inline-block text-white hover:text-purple-400 transition">
+                        +91 9175947532
+                    </a>
+                </div>
+
+                <!-- Contact Card 3 -->
+                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-all">
+                    <h3 class="text-xl font-semibold text-blue-400">Pushkaraj More</h3>
+                    <!-- <p class="text-gray-300 mt-2">Public Relations</p> -->
+                    <a href="tel:+918788248266" class="mt-4 inline-block text-white hover:text-blue-400 transition">
+                        +91 8788248266
+                    </a>
+                </div>
+
+                <!-- Contact Card 4 -->
+                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-purple-400 transition-all">
+                    <h3 class="text-xl font-semibold text-purple-400">Vinit Inamke</h3>
+                    <!-- <p class="text-gray-300 mt-2">Technical Support</p> -->
+                    <a href="tel:+917709262997" class="mt-4 inline-block text-white hover:text-purple-400 transition">
+                        +91 7709262997
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="sm:hidden fixed bottom-0 inset-x-0 bg-black/90 text-white py-3 px-6 flex justify-around items-center shadow-lg border-t border-gray-500/50">
+        <a href="/" class="flex flex-col items-center text-xs">
+            <span>🏠 Home</span>
+        </a>
+        <a href="/events" class="flex flex-col items-center text-xs">
+            <span>📅 Events</span>
+        </a>
+        <a href="/#scheduleeve" class="flex flex-col items-center text-xs">
+            <span>🕒 Schedule</span>
+        </a>
+        <a href="/contact" class="flex flex-col items-center text-xs">
+            <span>📞 Contact</span>
+        </a>
+    </nav>
+</body>
+</html> 

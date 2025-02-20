@@ -2,7 +2,9 @@ body {
     background-color: #13171A;
     color: white;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 .bg-dark {
     background-color: #13171A;
 }

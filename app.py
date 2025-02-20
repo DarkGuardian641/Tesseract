@@ -93,5 +93,6 @@ def clashofminds():
 @app.route('/techarena')
 def techarena():
     return render_template('techarena.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
