@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+
 <body class="bg-dark text-white">
 
     <!-- ✅ Navbar -->
-    <header class="flex z-40 w-full h-auto items-center justify-between sticky top-0 inset-x-0 backdrop-blur-lg bg-background/70 px-4 py-3 sm:px-6">
+    <header
+        class="flex z-40 w-full h-auto items-center justify-between sticky top-0 inset-x-0 backdrop-blur-lg bg-background/70 px-4 py-3 sm:px-6">
         <!-- Logo -->
         <a href="/" class="flex items-center">
             <img src="static/assets/Tesseract_logo.png" alt="Tesseract 2K25 Logo" class="h-10 sm:h-12">
@@ -19,7 +22,8 @@
 
         <!-- Desktop Navigation -->
         <nav class="hidden sm:flex gap-6 items-center">
-            <a href="/" class="font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent transition-all duration-300 hover:from-purple-400 hover:to-blue-400">Home</a>
+            <a href="/"
+                class="font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent transition-all duration-300 hover:from-purple-400 hover:to-blue-400">Home</a>
             <a href="/events" class="hover:text-gray-300 transition">Events</a>
             <a href="/schedule" class="hover:text-gray-300 transition">Schedule</a>
             <a href="/contact" class="hover:text-gray-300 transition">Contact</a>
@@ -27,12 +31,14 @@
 
         <!-- Register Button -->
         <a href="/register" class="sm:ml-0">
-            <button class="px-4 py-2 text-sm font-medium text-white bg-gradient-to-br from-purple-600 to-blue-500 rounded-md hover:bg-gradient-to-bl">Register</button>
+            <button
+                class="px-4 py-2 text-sm font-medium text-white bg-gradient-to-br from-purple-600 to-blue-500 rounded-md hover:bg-gradient-to-bl">Register</button>
         </a>
     </header>
 
     <!-- ✅ Mobile Bottom Navigation -->
-    <nav class="sm:hidden fixed bottom-0 inset-x-0 bg-black/90 text-white py-3 px-6 flex justify-around items-center shadow-lg border-t border-gray-500/50">
+    <nav
+        class="sm:hidden fixed bottom-0 inset-x-0 bg-black/90 text-white py-3 px-6 flex justify-around items-center shadow-lg border-t border-gray-500/50">
         <a href="/" class="flex flex-col items-center text-xs">
             <span>🏠 Home</span>
         </a>
@@ -50,283 +56,355 @@
     <!-- ✅ Events -->
     <section class="text-center py-8 px-4">
         <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
-            All <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Events</span> at <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Tesseract</span>
+            All <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Events</span>
+            at <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Tesseract</span>
         </h2>
         <p class="mt-3 text-gray-400 text-sm md:text-lg max-w-3xl mx-auto px-2">
-            A variety of events catering to different interests and industries. 
-            From technical events to gaming competitions, puzzles, and both tech and non-tech events — there's something for everyone. 
+            A variety of events catering to different interests and industries.
+            From technical events to gaming competitions, puzzles, and both tech and non-tech events — there's something
+            for everyone.
             Dare to dream, dare to innovate — 🎁 Prizes await!
         </p>
 
         <!-- Events Grid -->
         <div class="mt-6 grid md:grid-cols-3 gap-6 px-2 md:px-12">
-            
-        <!-- Event 1 -->
-        <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">TECH SAVVY QUIZ</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">1 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <a href="./techsavy">
 
-                <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
-                    Details
-                </button>
-            </a>
-        </div>
+            <!-- Event 1 -->
+            <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">TECH SAVVY
+                        QUIZ</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">1 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                <a href="./techsavy">
 
-        <!-- Event 2 -->
-        <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">VALORANT CLASH</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">2 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="2">
-                Details
-            </button>
-        </div>
-            
-        <!-- Event 3 -->
-        <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">ESCAPE ROOM</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">1 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="3">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 4 -->
-        <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">REEL IT</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">2 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="4">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 5 -->
-        <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">CODE SPRINT</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">1 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="5">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 6 -->
-        <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">IDEA FUSION</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">2 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="6">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 7 -->
-        <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">QR QUEST</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">1 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="7">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 8 -->
-        <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">AI PROMPT BATTLE</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">2 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="8">
-                Details
-            </button>
-        </div>
-        <!-- Event 9 -->
-        <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">BGMI</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">1 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="9">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 10 -->
-        <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">CLASH OF MINDS</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">2 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="10">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 11 -->
-        <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">TRACE X</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">1 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="11">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 12 -->
-        <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">CRAFT N CREATE</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">2 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="12">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 13 -->
-        <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">CAD GENESIS</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">1 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="13">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 14 -->
-        <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">ROBO RACE</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">2 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="14">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 15 -->
-        <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">OBSTACLE BLITZ</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">1 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="15">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 16 -->
-        <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">TECH ARENA</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">2 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="16">
-                Details
-            </button>
-        </div>
-
-        <!-- Event 17 -->
-        <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">STARTUP MANIA</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">1 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="17">
-                Details
-            </button>
-        </div>
-
-        <!-- Popup -->
-        <div id="popup" class="popup-overlay hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-            <div class="popup-content bg-gray-800 text-white p-6 rounded-lg w-1/2">
-                <!-- Event Name -->
-                <h3 id="event-name" class="text-xl font-bold mb-2">Event Name</h3>
-        
-                <!-- Event Details -->
-                <p id="popup-details" class="text-gray-300 mb-4">Detailed Description</p>
-        
-                <!-- Rounds -->
-                <p id="popup-rounds" class="text-gray-300 mb-4">Rounds: <span class="font-semibold">3</span></p>
-        
-                <!-- Team Members -->
-                <p id="popup-team-members" class="text-gray-300 mb-4">Team Members: <span class="font-semibold">5</span></p>
-        
-                <!-- Price -->
-                <p id="popup-price" class="text-gray-300 mb-4">Price: <span class="font-semibold">$100</span></p>
-        
-                <!-- Coordinator -->
-                <p id="popup-coordinator" class="text-gray-300 mb-4">Coordinator: <span class="font-semibold">John Doe</span></p>
-        
-                <!-- Event Image -->
-                <img id="popup-img" src="https://via.placeholder.com/600x300" alt="Event Image" class="w-full h-auto mt-4 mb-4 rounded">
-        
-                <!-- Close Button -->
-                <button id="close-btn" class="mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:scale-105 transition">Close</button>
+                    <button
+                        class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                        Details
+                    </button>
+                </a>
             </div>
-        </div>
 
+            <!-- Event 2 -->
+            <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">VALORANT
+                        CLASH</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">2 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                <a href="./valorant">
 
-    <!-- ✅ Footer -->
-    <footer class="bg-black text-white py-6">
-        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between px-6 text-sm text-gray-400">
-            <p class="text-center sm:text-left">© 2025 TESSERACT | Keystone School of Engineering TechFest. All rights reserved.</p>
-            <p class="text-center sm:text-right">
-                Design & Developed By 
-                <a href="https://www.linkedin.com/in/atharva-baikar/" class="text-blue-500 font-semibold hover:underline">Atharva Baikar</a> 
-                and 
-                <a href="https://www.linkedin.com/in/akanksha-kanade-34b999284/" class="text-blue-500 font-semibold hover:underline">Akanksha Kanade</a>
-            </p>
-        </div>
-    </footer>
-    {% block content %}{% endblock %}
-    <script src="static/js/events.js"></script>
+                    <button
+                        class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                        Details
+                    </button>
+                </a>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">ESCAPE
+                        ROOM</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">1 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                <a href="./escaperoom">
+
+                    <button
+                        class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                        Details
+                    </button>
+                </a>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">REEL
+                        IT</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">2 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                <a href="./reelit">
+
+                    <button
+                        class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                        Details
+                    </button>
+                </a>
+            </div>
+
+            <!-- Event 5 -->
+            <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">CODE
+                        SPRINT</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">1 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                <a href="./coderelay">
+
+                    <button
+                        class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                        Details
+                    </button>
+                </a>
+            </div>
+
+            <!-- Event 6 -->
+            <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">IDEA
+                        FUSION</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">2 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                <a href="./ideafusion">
+
+                    <button
+                        class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                        Details
+                    </button>
+                </a>
+            </div>
+
+            <!-- Event 7 -->
+            <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">QR
+                        QUEST</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">1 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                <a href="./qrquest">
+
+                    <button
+                        class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                        Details
+                    </button>
+                </a>
+            </div>
+
+            <!-- Event 8 -->
+            <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">AI PROMPT
+                        BATTLE</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">2 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                <a href="./aiprompt">
+
+                    <button
+                        class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                        Details
+                    </button>
+                </a>
+            </div>
+            <!-- Event 9 -->
+            <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">BGMI</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">1 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                <a href="./bgmi">
+
+                    <button
+                        class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                        Details
+                    </button>
+                </a>
+            </div>
+
+            <!-- Event 10 -->
+            <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">CLASH OF
+                        MINDS</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">2 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                <a href="./clashofminds">
+
+                    <button
+                        class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                        Details
+                    </button>
+                </a>
+            </div>
+
+            <!-- Event 11 -->
+            <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">TRACE
+                        X</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">1 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                <a href="./tracex">
+
+                    <button
+                        class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                        Details
+                    </button>
+                </a>
+            </div>
+
+            <!-- Event 12 -->
+            <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">CRAFT N
+                        CREATE</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">2 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                    <a href="./craftncreate">
+
+                        <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                            Details
+                        </button>
+                    </a>
+            </div>
+
+            <!-- Event 13 -->
+            <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">CAD
+                        GENESIS</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">1 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                    <a href="./cadgenesis">
+
+                        <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                            Details
+                        </button>
+                    </a>
+            </div>
+
+            <!-- Event 14 -->
+            <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">ROBO
+                        RACE</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">2 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                    <a href="./roborace">
+
+                        <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                            Details
+                        </button>
+                    </a>
+            </div>
+
+            <!-- Event 15 -->
+            <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">OBSTACLE
+                        BLITZ</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">1 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                    <a href="./obstacleblitz">
+
+                        <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                            Details
+                        </button>
+                    </a>
+            </div>
+
+            <!-- Event 16 -->
+            <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">TECH
+                        ARENA</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">2 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                    <a href="./techarena">
+
+                        <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                            Details
+                        </button>
+                    </a>
+            </div>
+
+            <!-- Event 17 -->
+            <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">STARTUP
+                        MANIA</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
+                <p class="font-bold mt-1 md:mt-2">1 March</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based
+                    line-tracing car & the one to reach the end...</p>
+                    <a href="./startupmania">
+
+                        <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                            Details
+                        </button>
+                    </a>
+            </div>
+
+            <!-- Popup -->
+</div>
+
+            <!-- ✅ Footer -->
+            <footer class="bg-black text-white py-6">
+                <div
+                    class="container mx-auto flex flex-col sm:flex-row items-center justify-between px-6 text-sm text-gray-400">
+                    <p class="text-center sm:text-left">© 2025 TESSERACT | Keystone School of Engineering TechFest. All
+                        rights reserved.</p>
+                    <p class="text-center sm:text-right">
+                        Design & Developed By
+                        <a href="https://www.linkedin.com/in/atharva-baikar/"
+                            class="text-blue-500 font-semibold hover:underline">Atharva Baikar</a>
+                        and
+                        <a href="https://www.linkedin.com/in/akanksha-kanade-34b999284/"
+                            class="text-blue-500 font-semibold hover:underline">Akanksha Kanade</a>
+                    </p>
+                </div>
+            </footer>
+            {% block content %}{% endblock %}
+            <script src="static/js/events.js"></script>
 </body>
+
 </html>
