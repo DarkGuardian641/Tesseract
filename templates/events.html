@@ -62,16 +62,24 @@
         <div class="mt-6 grid md:grid-cols-3 gap-6 px-2 md:px-12">
             
         <!-- Event 1 -->
-        <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
-            <h3 class="text-lg md:text-xl font-bold text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">TECH SAVVY QUIZ</span>
-            </h3>
-            <p class="text-xs md:text-sm text-gray-400">Technical - Solo</p>
-            <p class="font-bold mt-1 md:mt-2">1 March</p>
-            <p class="mt-2 text-gray-300 text-sm md:text-base">Participants will compete with their IoT-based line-tracing car & the one to reach the end...</p>
-            <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition" data-event="1">
-                Details
-            </button>
+        <div id="popup" class="popup-overlay hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4">
+            <div class="popup-content bg-gray-800 text-white p-4 sm:p-6 rounded-lg w-full sm:w-3/4 md:w-1/2 max-h-[90vh] overflow-y-auto">
+                <!-- Event Name -->
+                <h3 id="event-name" class="text-lg sm:text-xl font-bold mb-2">Event Name</h3>
+        
+               
+                <!-- Event Details -->
+                <div class="space-y-3 text-sm sm:text-base">
+                    <p id="popup-details" class="text-gray-300">Detailed Description</p>
+                    <p id="popup-rounds" class="text-gray-300">Rounds: <span class="font-semibold">3</span></p>
+                    <p id="popup-team-members" class="text-gray-300">Team Members: <span class="font-semibold">5</span></p>
+                    <p id="popup-price" class="text-gray-300">Price: <span class="font-semibold">$100</span></p>
+                    <p id="popup-coordinator" class="text-gray-300">Coordinator: <span class="font-semibold">John Doe</span></p>
+                </div>
+        
+                <!-- Close Button -->
+                <button id="close-btn" class="mt-4 w-full sm:w-auto bg-red-600 text-white px-4 py-2 rounded-lg hover:scale-105 transition">Close</button>
+            </div>
         </div>
 
         <!-- Event 2 -->
