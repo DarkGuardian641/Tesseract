@@ -79,7 +79,7 @@
         </p>
 
         <!-- Events Grid -->
-        <div class="mt-6 grid md:grid-cols-3 gap-6 px-2 md:px-12">
+        <div class="mt-12 grid md:grid-cols-3 gap-6 px-2 md:px-12">
 
             <!-- Event 1 -->
             <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
@@ -369,37 +369,34 @@
                         MANIA</span>
                 </h3>
                 <p class="text-xs md:text-sm text-gray-400">Non Technical - Teams</p>
-                <p class="font-bold mt-1 md:mt-2">28     Feb 2025</p>
+                <p class="font-bold mt-1 md:mt-2">28 Feb 2025</p>
                 <p class="mt-2 text-gray-300 text-sm md:text-base">Pitch your dream startup and turn ideas into reality! </p>
-                    <a href="./startupmania">
-
-                        <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
-                            Details
-                        </button>
-                    </a>
+                <a href="./startupmania">
+                    <button class="details-btn mt-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1.5 rounded-lg hover:scale-105 transition">
+                        Details
+                    </button>
+                </a>
             </div>
 
-            <!-- Popup -->
-</div>
+        </div>
+    </section>
 
-            <!-- ✅ Footer -->
-            <footer class="bg-black text-white py-6">
-                <div
-                    class="container mx-auto flex flex-col sm:flex-row items-center justify-between px-6 text-sm text-gray-400">
-                    <p class="text-center sm:text-left">© 2025 TESSERACT | Keystone School of Engineering TechFest. All
-                        rights reserved.</p>
-                    <p class="text-center sm:text-right">
-                        Design & Developed By
-                        <a href="https://www.linkedin.com/in/atharva-baikar/"
-                            class="text-blue-500 font-semibold hover:underline">Atharva Baikar</a>
-                        and
-                        <a href="https://www.linkedin.com/in/akanksha-kanade-34b999284/"
-                            class="text-blue-500 font-semibold hover:underline">Akanksha Kanade</a>
-                    </p>
-                </div>
-            </footer>
-            {% block content %}{% endblock %}
-            <script src="static/js/events.js"></script>
+    <!-- ✅ Footer -->
+    <footer class="bg-black text-white py-6 mt-12">
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between px-6 text-sm text-gray-400">
+            <p class="text-center sm:text-left mb-4 sm:mb-0">© 2025 TESSERACT | Keystone School of Engineering TechFest. All rights reserved.</p>
+            <p class="text-center sm:text-right">
+                Design & Developed By
+                <a href="https://www.linkedin.com/in/atharva-baikar/" target="_blank" rel="noopener noreferrer" 
+                   class="text-blue-500 font-semibold hover:underline">Atharva Baikar</a>
+                and
+                <a href="https://www.linkedin.com/in/akanksha-kanade-34b999284/" target="_blank" rel="noopener noreferrer"
+                   class="text-blue-500 font-semibold hover:underline">Akanksha Kanade</a>
+            </p>
+        </div>
+    </footer>
+
+    {% block content %}{% endblock %}
+    <script src="static/js/events.js"></script>
 </body>
-
 </html>
