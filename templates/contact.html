@@ -6,6 +6,12 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="static/css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('translate-x-full');
+        }
+    </script>
 </head>
 <body class="bg-dark text-white">
     <!-- Navbar -->
@@ -23,73 +29,96 @@
             <a href="/contact" class="hover:text-gray-300 transition">Contact</a>
         </nav>
 
+        <!-- Mobile Menu Button -->
+        <button class="sm:hidden p-2 focus:outline-none" onclick="toggleMenu()">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
         <!-- Register Button -->
-        <a href="/register" class="sm:ml-0">
+        <a href="https://forms.gle/a1TXeSwySG2HcT9f7" target="_blank" class="sm:ml-0">
             <button class="px-4 py-2 text-sm font-medium text-white bg-gradient-to-br from-purple-600 to-blue-500 rounded-md hover:bg-gradient-to-bl">Register</button>
         </a>
     </header>
 
-    <!-- Main Content -->
-    <div class="min-h-screen flex items-center justify-center px-4">
-        <div class="max-w-4xl w-full bg-gray-900/50 backdrop-blur-lg rounded-xl border border-gray-700 p-8 sm:p-12">
-            <h1 class="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                Contact Us
-            </h1>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <!-- Contact Card 1 -->
-                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-all">
-                    <h3 class="text-xl font-semibold text-blue-400">Atharva Baikar</h3>
-                    <!-- <p class="text-gray-300 mt-2">Technical Head</p> -->
-                    <a href="tel:+918605232048" class="mt-4 inline-block text-white hover:text-blue-400 transition">
-                        +91 8605232048
-                    </a>
-                </div>
-
-                <!-- Contact Card 2 -->
-                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-purple-400 transition-all">
-                    <h3 class="text-xl font-semibold text-purple-400">Akanksha Kanade</h3>
-                    <!-- <p class="text-gray-300 mt-2">Event Coordinator</p> -->
-                    <a href="tel:+919175947532" class="mt-4 inline-block text-white hover:text-purple-400 transition">
-                        +91 9175947532
-                    </a>
-                </div>
-
-                <!-- Contact Card 3 -->
-                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-all">
-                    <h3 class="text-xl font-semibold text-blue-400">Pushkaraj More</h3>
-                    <!-- <p class="text-gray-300 mt-2">Public Relations</p> -->
-                    <a href="tel:+918788248266" class="mt-4 inline-block text-white hover:text-blue-400 transition">
-                        +91 8788248266
-                    </a>
-                </div>
-
-                <!-- Contact Card 4 -->
-                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-purple-400 transition-all">
-                    <h3 class="text-xl font-semibold text-purple-400">Vinit Inamke</h3>
-                    <!-- <p class="text-gray-300 mt-2">Technical Support</p> -->
-                    <a href="tel:+917709262997" class="mt-4 inline-block text-white hover:text-purple-400 transition">
-                        +91 7709262997
-                    </a>
-                </div>
-            </div>
+    <!-- Mobile Sidebar Navigation -->
+    <div id="mobile-menu" class="fixed inset-y-0 right-0 w-64 bg-black/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class="flex justify-end p-4">
+            <button class="p-2 focus:outline-none" onclick="toggleMenu()">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
         </div>
+        <nav class="flex flex-col space-y-4 p-6">
+            <a href="/" class="text-white hover:text-purple-400 transition">🏠 Home</a>
+            <a href="/events" class="text-white hover:text-purple-400 transition">📅 Events</a>
+            <a href="/#scheduleeve" class="text-white hover:text-purple-400 transition">🕒 Schedule</a>
+            <a href="/contact" class="text-white hover:text-purple-400 transition">📞 Contact</a>
+        </nav>
     </div>
 
-    <!-- Mobile Bottom Navigation -->
-    <nav class="sm:hidden fixed bottom-0 inset-x-0 bg-black/90 text-white py-3 px-6 flex justify-around items-center shadow-lg border-t border-gray-500/50">
-        <a href="/" class="flex flex-col items-center text-xs">
-            <span>🏠 Home</span>
-        </a>
-        <a href="/events" class="flex flex-col items-center text-xs">
-            <span>📅 Events</span>
-        </a>
-        <a href="/#scheduleeve" class="flex flex-col items-center text-xs">
-            <span>🕒 Schedule</span>
-        </a>
-        <a href="/contact" class="flex flex-col items-center text-xs">
-            <span>📞 Contact</span>
-        </a>
-    </nav>
+    <!-- Main Content -->
+    <section class="text-center py-8 px-4">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+            Contact <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Us</span>
+        </h2>
+        <p class="mt-3 text-gray-400 text-sm md:text-lg max-w-3xl mx-auto px-2">
+            Get in touch with our team for any queries or support. We're here to help you with any information you need about Tesseract 2K25.
+        </p>
+
+        <!-- Contact Grid -->
+        <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-4 gap-6 px-2 md:px-12">
+            <!-- Contact Card 1 -->
+            <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Atharva Baikar</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical Head</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">+91 12345 67890</p>
+            </div>
+
+            <!-- Contact Card 2 -->
+            <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Akanksha Kanade</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Event Coordinator</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">+91 12345 67890</p>
+            </div>
+
+            <!-- Contact Card 3 -->
+            <div class="border border-blue-400 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">John Doe</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Public Relations</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">+91 12345 67890</p>
+            </div>
+
+            <!-- Contact Card 4 -->
+            <div class="border border-purple-500 p-6 rounded-xl shadow-lg bg-gray-900">
+                <h3 class="text-lg md:text-xl font-bold text-white">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Jane Smith</span>
+                </h3>
+                <p class="text-xs md:text-sm text-gray-400">Technical Support</p>
+                <p class="mt-2 text-gray-300 text-sm md:text-base">+91 12345 67890</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6">
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between px-6 text-sm text-gray-400">
+            <p class="text-center sm:text-left">© 2025 TESSERACT | Keystone School of Engineering TechFest. All rights reserved.</p>
+            <p class="text-center sm:text-right">
+                Design & Developed By
+                <a href="https://www.linkedin.com/in/atharva-baikar/" class="text-blue-500 font-semibold hover:underline">Atharva Baikar</a>
+                and
+                <a href="https://www.linkedin.com/in/akanksha-kanade-34b999284/" class="text-blue-500 font-semibold hover:underline">Akanksha Kanade</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html> 
