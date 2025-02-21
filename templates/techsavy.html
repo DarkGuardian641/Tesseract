@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Savvy Event</title>
     <link rel="stylesheet" href="static/css/styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('translate-x-full');
+        }
+    </script>
 </head>
 <body class="bg-dark text-white">
     <!-- ✅ Navbar -->
@@ -24,7 +30,7 @@
         </nav>
 
         <!-- Register Button -->
-        <a href="/register" class="sm:ml-0">
+        <a href="https://forms.gle/a1TXeSwySG2HcT9f7" class="sm:ml-0">
             <button class="px-4 py-2 text-sm font-medium text-white bg-gradient-to-br from-purple-600 to-blue-500 rounded-md hover:bg-gradient-to-bl">Register</button>
         </a>
     </header>
