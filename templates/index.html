@@ -90,65 +90,61 @@
     <section class="text-gray-100 body-font" id="scheduleeve" style="scroll-margin-top: 100px;">
         <div class="container mx-auto text-center py-16 px-5">
             <span class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full">Events</span>
-            <br>
-            <br>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Event Schedule</h2>
-            <p class="text-gray-400 text-base sm:text-lg mb-8">Two days of tech, fun, and excitement! Join us for events and competitions. Plan your participation accordingly.</p>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-6 mb-6">Event Schedule</h2>
+            <p class="text-gray-400 text-base sm:text-lg mb-12">Two days of tech, fun, and excitement! Join us for events and competitions. Plan your participation accordingly.</p>
+            
+            <div class="grid grid-cols-1 max-w-2xl mx-auto mb-12">
+                <a href="/events" class="border border-purple-500 rounded-lg p-4 sm:p-6 hover:bg-purple-900/30 transition-colors cursor-pointer text-center">
+                    <h3 class="text-lg font-semibold text-purple-400">View All Events</h3>
+                </a>
+            </div>
+            
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
                 <a href="static/assets/day1.pdf" target="_blank" class="border border-blue-400 rounded-lg p-4 sm:p-6 hover:bg-blue-900/30 transition-colors cursor-pointer">
-                    <h3 class="text-lg font-semibold text-blue-400">Day 1 - Events</h3>
+                    <h3 class="text-lg font-semibold text-blue-400">Day 1 - Events Schedule</h3>
                     <p class="text-gray-400 mt-2">27 February 2025</p>
                 </a>
                 <a href="static/assets/day2.pdf" target="_blank" class="border border-blue-400 rounded-lg p-4 sm:p-6 hover:bg-blue-900/30 transition-colors cursor-pointer">
-                    <h3 class="text-lg font-semibold text-blue-400">Day 2 - Events</h3>
+                    <h3 class="text-lg font-semibold text-blue-400">Day 2 - Events Schedule</h3>
                     <p class="text-gray-400 mt-2">28 February 2025</p>
                 </a>
             </div>
         </div>
     </section>
 
+    <section class="text-center py-16">
+        <span class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full">Venue</span>
+        <h2 class="text-3xl font-bold mt-6">Where?</h2>
+        <p class="mt-6 text-lg">Keystone School of Engineering, Near Handewadi Chowk, Urali Devachi, Pune 412308</p>
+        <button id="openModalBtn" class="mt-12 px-6 py-2 text-white font-semibold rounded-lg shadow-md bg-gradient-to-r from-blue-500 to-purple-600">
+            Get Direction
+        </button>
+    </section>
+
+    <!-- Modal Background -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden">
+        <div class="bg-gray-900 text-white p-6 rounded-lg max-w-lg w-full relative">
+            <h3 class="text-xl font-semibold text-center">Keystone School of Engineering</h3>
+            <div class="mt-4">
+                <!-- Google Map Embed -->
+                <iframe 
+                    class="w-full h-64 rounded-lg" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.8092209165507!2d73.93491957593083!3d18.44696928263237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e999215c9f2b%3A0xa9b93c99a6184c98!2sKeystone%20School%20of%20Engineering!5e0!3m2!1sen!2sin!4v1739695990761!5m2!1sen!2sin" 
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <button id="closeModalBtn" class="mt-4 w-full bg-red-600 py-2 rounded-lg">Cancel</button>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script> <!-- Linking JavaScript file -->
+
     <br>
     <br>
     <br>
-
-    <!-- Venue Section -->
-    <div class="text-center">
-      <span class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full">Venue</span>
-      <br>
-      <br>
-      <h2 class="text-3xl font-bold mt-3">Where?</h2>
-      <p class="mt-2 text-lg">Keystone School of Engineering, Near Handewadi Chowk, Urali Devachi, Pune 412308</p>
-      <br>
-      <button id="openModalBtn" class="mt-4 px-6 py-2 text-white font-semibold rounded-lg shadow-md bg-gradient-to-r from-blue-500 to-purple-600">
-          Get Direction
-      </button>
-    
-  </div>
-
-  <!-- Modal Background -->
-  <div id="modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden">
-      <div class="bg-gray-900 text-white p-6 rounded-lg max-w-lg w-full relative">
-          <h3 class="text-xl font-semibold text-center">Keystone School of Engineering</h3>
-          <div class="mt-4">
-              <!-- Google Map Embed -->
-              <iframe 
-                  class="w-full h-64 rounded-lg" 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.8092209165507!2d73.93491957593083!3d18.44696928263237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e999215c9f2b%3A0xa9b93c99a6184c98!2sKeystone%20School%20of%20Engineering!5e0!3m2!1sen!2sin!4v1739695990761!5m2!1sen!2sin" 
-                  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-          </div>
-          <button id="closeModalBtn" class="mt-4 w-full bg-red-600 py-2 rounded-lg">Cancel</button>
-      </div>
-  </div>
-
-  <script src="static/js/script.js"></script> <!-- Linking JavaScript file -->
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+    <br>
+    <br>
+    <br>
 
 
     <!-- ✅ Footer -->
